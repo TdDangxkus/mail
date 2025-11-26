@@ -181,7 +181,276 @@
                 </div>
                 <div class="section-content">
                     <p class="intro-text" data-i18n="outlook-config-intro">Sau khi đã đăng nhập thành công vào AWS WorkMail, bạn cần cấu hình Outlook để có thể sử dụng email trên máy tính. Thực hiện theo các bước sau:</p>
-                    <p class="update-notice" data-i18n="outlook-config-update">📝 Đang cập nhật...</p>
+                    
+                    <!-- Step B1 -->
+                    <div class="step-container">
+                        <div class="step-header">
+                            <span class="step-number"><span data-i18n="step">Bước</span> 1</span>
+                            <h3 data-i18n="outlook-b1-title">Mở Outlook và chọn File</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-image-container">
+                                <img src="b1.png" alt="Bước 1: Mở Outlook và chọn File" class="step-image">
+                            </div>
+                            <div class="step-description">
+                                <p data-i18n="outlook-b1-desc1">Mở Microsoft Outlook trên máy tính của bạn.</p>
+                                <p data-i18n="outlook-b1-desc2">Ở góc trái trên cùng, nhấp chuột vào tab <strong>File</strong> trên thanh menu.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step B2 -->
+                    <div class="step-container">
+                        <div class="step-header">
+                            <span class="step-number"><span data-i18n="step">Bước</span> 2</span>
+                            <h3 data-i18n="outlook-b2-title">Truy cập Account Settings</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-image-container">
+                                <img src="b2.jpg" alt="Bước 2: Account Settings" class="step-image">
+                            </div>
+                            <div class="step-description">
+                                <p data-i18n="outlook-b2-desc1">Trong menu File, tìm và chọn <strong>Account Settings</strong>.</p>
+                                <p data-i18n="outlook-b2-desc2">Sau đó chọn tiếp <strong>Account Settings</strong> từ menu con hiển thị.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step B3 -->
+                    <div class="step-container">
+                        <div class="step-header">
+                            <span class="step-number"><span data-i18n="step">Bước</span> 3</span>
+                            <h3 data-i18n="outlook-b3-title">Kiểm tra email đã tồn tại</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-image-container">
+                                <img src="b3.jpg" alt="Bước 3: Kiểm tra email" class="step-image">
+                            </div>
+                            <div class="step-description">
+                                <p data-i18n="outlook-b3-desc1">Trong cửa sổ Account Settings, kiểm tra xem email AWS WorkMail đã được cấu hình chưa.</p>
+                                <div class="info-box" style="margin-top: 15px;">
+                                    <p><strong data-i18n="outlook-b3-case1">Trường hợp 1:</strong> <span data-i18n="outlook-b3-case1-desc">Nếu email đã tồn tại trong danh sách, vui lòng thực hiện từ Bước 4 để xóa và tạo lại profile.</span></p>
+                                    <p><strong data-i18n="outlook-b3-case2">Trường hợp 2:</strong> <span data-i18n="outlook-b3-case2-desc">Nếu email chưa có, bạn có thể bỏ qua các bước 4-9 và bắt đầu từ Bước 10 để cấu hình email mới.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step B4 (Only if email exists) -->
+                    <div class="step-container">
+                        <div class="step-header">
+                            <span class="step-number"><span data-i18n="step">Bước</span> 4</span>
+                            <h3 data-i18n="outlook-b4-title">Mở Control Panel</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-image-container">
+                                <img src="b4.jpg" alt="Bước 4: Control Panel" class="step-image">
+                            </div>
+                            <div class="step-description">
+                                <p data-i18n="outlook-b4-desc1">Nếu email đã tồn tại, bạn cần xóa profile cũ trước.</p>
+                                <p data-i18n="outlook-b4-desc2">Mở <strong>Control Panel</strong> trên máy tính Windows của bạn.</p>
+                                <p data-i18n="outlook-b4-desc3">Bạn có thể tìm Control Panel bằng cách nhấn phím Windows và gõ "Control Panel".</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step B5 -->
+                    <div class="step-container">
+                        <div class="step-header">
+                            <span class="step-number"><span data-i18n="step">Bước</span> 5</span>
+                            <h3 data-i18n="outlook-b5-title">Truy cập User Accounts</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-image-container">
+                                <img src="b5.jpg" alt="Bước 5: User Accounts" class="step-image">
+                            </div>
+                            <div class="step-description">
+                                <p data-i18n="outlook-b5-desc1">Trong Control Panel, tìm và nhấp vào mục <strong>User Accounts</strong>.</p>
+                                <p data-i18n="outlook-b5-desc2">Nếu không thấy, bạn có thể thay đổi chế độ xem sang "Large icons" hoặc "Small icons" để dễ tìm hơn.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step B6 -->
+                    <div class="step-container">
+                        <div class="step-header">
+                            <span class="step-number"><span data-i18n="step">Bước</span> 6</span>
+                            <h3 data-i18n="outlook-b6-title">Mở Mail (Microsoft Outlook)</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-image-container">
+                                <img src="b6.jpg" alt="Bước 6: Mail Outlook" class="step-image">
+                            </div>
+                            <div class="step-description">
+                                <p data-i18n="outlook-b6-desc1">Trong User Accounts, tìm và nhấp vào <strong>Mail (Microsoft Outlook)</strong>.</p>
+                                <p data-i18n="outlook-b6-desc2">Lưu ý: Tùy thuộc vào phiên bản Outlook bạn đang sử dụng, có thể hiển thị là 32-bit hoặc 64-bit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step B7 -->
+                    <div class="step-container">
+                        <div class="step-header">
+                            <span class="step-number"><span data-i18n="step">Bước</span> 7</span>
+                            <h3 data-i18n="outlook-b7-title">Chọn Show Profiles</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-image-container">
+                                <img src="b7.jpg" alt="Bước 7: Show Profiles" class="step-image">
+                            </div>
+                            <div class="step-description">
+                                <p data-i18n="outlook-b7-desc1">Trong cửa sổ Mail Setup, nhấp vào nút <strong>Show Profiles</strong>.</p>
+                                <p data-i18n="outlook-b7-desc2">Đây là nơi bạn có thể quản lý tất cả các profile email đã được cấu hình trên máy tính.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step B8 -->
+                    <div class="step-container">
+                        <div class="step-header">
+                            <span class="step-number"><span data-i18n="step">Bước</span> 8</span>
+                            <h3 data-i18n="outlook-b8-title">Xóa Profile cũ</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-image-container">
+                                <img src="b8.jpg" alt="Bước 8: Xóa Profile" class="step-image">
+                            </div>
+                            <div class="step-description">
+                                <p data-i18n="outlook-b8-desc1">Chọn profile email cũ mà bạn muốn xóa (thường là profile của email Zimbra hoặc email cũ).</p>
+                                <p data-i18n="outlook-b8-desc2">Nhấp vào nút <strong>Remove</strong> hoặc <strong>Delete</strong> để xóa profile đó.</p>
+                                <p class="warning-text" data-i18n="outlook-b8-warning">⚠️ Lưu ý: Hãy đảm bảo bạn đã backup dữ liệu quan trọng trước khi xóa profile.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step B9 -->
+                    <div class="step-container">
+                        <div class="step-header">
+                            <span class="step-number"><span data-i18n="step">Bước</span> 9</span>
+                            <h3 data-i18n="outlook-b9-title">Tạo Profile mới</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-image-container">
+                                <img src="b9.jpg" alt="Bước 9: Tạo Profile mới" class="step-image">
+                            </div>
+                            <div class="step-description">
+                                <p data-i18n="outlook-b9-desc1">Sau khi xóa profile cũ, quay lại Outlook và tạo profile mới.</p>
+                                <p data-i18n="outlook-b9-desc2">Bạn sẽ cần cấu hình lại email từ đầu với thông tin AWS WorkMail mới.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step B10 -->
+                    <div class="step-container">
+                        <div class="step-header">
+                            <span class="step-number"><span data-i18n="step">Bước</span> 10</span>
+                            <h3 data-i18n="outlook-b10-title">Đăng nhập email mới</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-image-container">
+                                <img src="b10.jpg" alt="Bước 10: Đăng nhập email" class="step-image">
+                            </div>
+                            <div class="step-description">
+                                <p data-i18n="outlook-b10-desc1">Trong Outlook, bắt đầu quá trình thêm tài khoản email mới.</p>
+                                <p data-i18n="outlook-b10-desc2">Nhập đầy đủ địa chỉ email của bạn, ví dụ: <code>Dalziel@fourseasonsbutton.com</code></p>
+                                <p data-i18n="outlook-b10-desc3">Nhập mật khẩu đã được IT cung cấp.</p>
+                                <p class="info-box" style="margin-top: 10px;">
+                                    <strong data-i18n="outlook-b10-note">Lưu ý quan trọng:</strong> <span data-i18n="outlook-b10-note-desc">Hãy đảm bảo tích vào ô <strong>Advanced options</strong> để có thể cấu hình thêm các tùy chọn cần thiết.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step B11 -->
+                    <div class="step-container">
+                        <div class="step-header">
+                            <span class="step-number"><span data-i18n="step">Bước</span> 11</span>
+                            <h3 data-i18n="outlook-b11-title">Chọn Outlook.com</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-image-container">
+                                <img src="b11.jpg" alt="Bước 11: Chọn Outlook.com" class="step-image">
+                            </div>
+                            <div class="step-description">
+                                <p data-i18n="outlook-b11-desc1">Trong phần Advanced options, chọn loại tài khoản là <strong>Outlook.com</strong>.</p>
+                                <p data-i18n="outlook-b11-desc2">Đây là cấu hình phù hợp cho AWS WorkMail để Outlook có thể kết nối đúng cách.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step B12 -->
+                    <div class="step-container">
+                        <div class="step-header">
+                            <span class="step-number"><span data-i18n="step">Bước</span> 12</span>
+                            <h3 data-i18n="outlook-b12-title">Chờ quá trình cấu hình</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-image-container">
+                                <img src="b12.jpg" alt="Bước 12: Chờ loading" class="step-image">
+                            </div>
+                            <div class="step-description">
+                                <p data-i18n="outlook-b12-desc1">Sau khi nhấn Next, Outlook sẽ bắt đầu quá trình cấu hình và kết nối với AWS WorkMail.</p>
+                                <p data-i18n="outlook-b12-desc2">Vui lòng chờ trong khi hệ thống đang xử lý. Quá trình này có thể mất vài phút.</p>
+                                <p data-i18n="outlook-b12-desc3">Sau khi hoàn tất, bạn sẽ thấy màn hình tiếp theo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step B13 -->
+                    <div class="step-container">
+                        <div class="step-header">
+                            <span class="step-number"><span data-i18n="step">Bước</span> 13</span>
+                            <h3 data-i18n="outlook-b13-title">Chấp nhận quyền truy cập</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-image-container">
+                                <img src="b13.jpg" alt="Bước 13: Allow" class="step-image">
+                            </div>
+                            <div class="step-description">
+                                <p data-i18n="outlook-b13-desc1">Hệ thống sẽ yêu cầu bạn cấp quyền truy cập cho Outlook.</p>
+                                <p data-i18n="outlook-b13-desc2">Nhấp vào nút <strong>Allow</strong> hoặc <strong>Cho phép</strong> để chấp nhận và tiếp tục.</p>
+                                <p data-i18n="outlook-b13-desc3">Điều này cho phép Outlook đồng bộ email từ AWS WorkMail về máy tính của bạn.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step B14 -->
+                    <div class="step-container">
+                        <div class="step-header">
+                            <span class="step-number"><span data-i18n="step">Bước</span> 14</span>
+                            <h3 data-i18n="outlook-b14-title">Tiếp tục với Next</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-image-container">
+                                <img src="b14.jpg" alt="Bước 14: Next" class="step-image">
+                            </div>
+                            <div class="step-description">
+                                <p data-i18n="outlook-b14-desc1">Sau khi chấp nhận quyền truy cập, nhấp vào nút <strong>Next</strong> để tiếp tục quá trình cấu hình.</p>
+                                <p data-i18n="outlook-b14-desc2">Outlook sẽ hoàn tất việc thiết lập kết nối với tài khoản email của bạn.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step B15 -->
+                    <div class="step-container">
+                        <div class="step-header">
+                            <span class="step-number"><span data-i18n="step">Bước</span> 15</span>
+                            <h3 data-i18n="outlook-b15-title">Hoàn tất cấu hình</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-image-container">
+                                <img src="b15.jpg" alt="Bước 15: Done" class="step-image">
+                            </div>
+                            <div class="step-description">
+                                <p data-i18n="outlook-b15-desc1">Nhấp vào nút <strong>Done</strong> để hoàn tất quá trình cấu hình.</p>
+                                <p data-i18n="outlook-b15-desc2">Outlook sẽ bắt đầu đồng bộ tất cả email từ webmail về máy tính của bạn.</p>
+                                <p data-i18n="outlook-b15-desc3">Quá trình này có thể mất một chút thời gian tùy thuộc vào số lượng email của bạn.</p>
+                                <p class="info-box" style="margin-top: 15px;">
+                                    <strong data-i18n="outlook-b15-note">Hoàn tất:</strong> <span data-i18n="outlook-b15-note-desc">Sau khi đồng bộ xong, bạn có thể sử dụng Outlook để gửi và nhận email như bình thường. Tất cả email từ AWS WorkMail sẽ được hiển thị trong Outlook.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 

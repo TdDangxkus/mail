@@ -19,28 +19,11 @@ let currentStep = "";
 
 // Hide loading screen after page loads
 window.addEventListener("load", () => {
-  // Update language button text
-  updateLanguageButton();
   setTimeout(() => {
     loadingScreen.classList.add("hidden");
     mainContent.classList.remove("hidden");
   }, 1500);
 });
-
-// Toggle language function
-function toggleLanguage() {
-  currentLang = currentLang === 'vi' ? 'en' : 'vi';
-  changeLanguage(currentLang);
-  updateLanguageButton();
-}
-
-// Update language button text
-function updateLanguageButton() {
-  const langText = document.getElementById('lang-text');
-  if (langText) {
-    langText.textContent = currentLang === 'vi' ? 'EN' : 'VI';
-  }
-}
 
 // Open password update modal
 function updatePassword(step) {
@@ -74,17 +57,17 @@ function savePassword() {
 
   // Validation
   if (!userName) {
-    showModalMessage(translations[currentLang]?.nameRequired || "Vui lòng nhập tên của bạn!", "error");
+    showModalMessage("Vui lòng nhập tên của bạn!", "error");
     return;
   }
 
   if (!office) {
-    showModalMessage(translations[currentLang]?.officeRequired || "Vui lòng chọn văn phòng!", "error");
+    showModalMessage("Vui lòng chọn văn phòng!", "error");
     return;
   }
 
   if (!newPassword) {
-    showModalMessage(translations[currentLang]?.passwordRequired || "Vui lòng nhập mật khẩu mới!", "error");
+    showModalMessage("Vui lòng nhập mật khẩu mới!", "error");
     return;
   }
 
@@ -109,11 +92,10 @@ function savePassword() {
   allUpdates.push(updateData);
   localStorage.setItem("all_password_updates", JSON.stringify(allUpdates));
 
-  const successMsg = (translations[currentLang]?.passwordUpdated || "Đã cập nhật mật khẩu cho") + 
-                     ` ${userName} ` + 
-                     (translations[currentLang]?.atStep || "ở bước") + 
-                     ` ${currentStep}!`;
-  showModalMessage(successMsg, "success");
+  showModalMessage(
+    `Đã cập nhật mật khẩu cho ${userName} ở bước ${currentStep}!`,
+    "success"
+  );
 
   // Clear form after 2 seconds
   setTimeout(() => {
