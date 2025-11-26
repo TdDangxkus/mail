@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Workmail Configuration</title>
+    <link rel="icon" type="image/jpeg" href="fourseasonsbutton_logo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <img src="fourseasonsbutton_logo-removebg-preview.png" alt="Loading" class="loading-logo">
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content hidden">
+        <div class="container">
+            <div class="header">
+                <div class="header-top">
+                    <button id="lang-toggle" class="lang-toggle" onclick="toggleLanguage()">
+                        <span id="lang-text">EN</span>
+                    </button>
+                </div>
+                <img src="fourseasonsbutton_logo.jpg" alt="Company Logo" class="company-logo">
+                <h1 data-i18n="page-title">AWS Workmail Configuration</h1>
+                <a href="guide.html" class="guide-link" data-i18n="guide-link"> Xem hướng dẫn sử dụng</a>
+            </div>
+
+            <div class="form-section">
+                <div class="input-group">
+                    <label for="user-name" data-i18n="search-name-label">Tìm kiếm tên của bạn:</label>
+                    <div class="search-container">
+                        <input type="text" id="user-name" data-i18n="search-name-placeholder" placeholder="Gõ để tìm kiếm tên..." autocomplete="off">
+                        <div id="user-dropdown" class="user-dropdown hidden"></div>
+                    </div>
+                    <div id="name-error" class="error-message hidden"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="office-select" data-i18n="office-select-label">Chọn nơi làm việc:</label>
+                    <select id="office-select">
+                        <option value="" data-i18n="select-office">-- Chọn văn phòng --</option>
+                        <option value="hcm">HCM OFFICE</option>
+                        <option value="hp">HP OFFICE</option>
+                        <option value="hn">HN OFFICE</option>
+                        <option value="factory">Factory BD</option>
+                    </select>
+                </div>
+
+                <button id="show-password-btn" class="btn-primary" disabled data-i18n="show-password-btn">Hiển thị mật khẩu</button>
+            </div>
+
+            <div id="user-info" class="user-info hidden">
+                <div class="info-box">
+                    <p><span data-i18n="hello">Xin chào,</span> <strong id="selected-user-name"></strong>!</p>
+                    <p><span data-i18n="access-count">Số lần đã mở:</span> <strong id="access-count">0</strong></p>
+                </div>
+            </div>
+
+            <div id="password-display" class="password-display hidden">
+                <div class="password-box">
+                    <h3 data-i18n="office-password">Mật khẩu chung của văn phòng:</h3>
+                    <div class="password-value" id="password-value"></div>
+                    <button id="copy-btn" class="btn-copy" data-i18n="copy-btn">Sao chép</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="language.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

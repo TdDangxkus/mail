@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn Sử Dụng Email AWS</title>
+    <link rel="icon" type="image/jpeg" href="fourseasonsbutton_logo.jpg">
+    <link rel="stylesheet" href="guide-style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <img src="fourseasonsbutton_logo-removebg-preview.png" alt="Loading" class="loading-logo">
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content hidden">
+        <div class="container">
+            <div class="header">
+                <div class="header-top">
+                    <button id="lang-toggle" class="lang-toggle" onclick="toggleLanguage()">
+                        <span id="lang-text">EN</span>
+                    </button>
+                </div>
+                <img src="fourseasonsbutton_logo.jpg" alt="Company Logo" class="company-logo">
+                <h1 data-i18n="guide-title">Hướng Dẫn Sử Dụng Hệ Thống Email AWS (Mới)</h1>
+                <a href="index.html" class="back-link" data-i18n="back-link">← Quay lại trang chính</a>
+            </div>
+
+            <!-- Section 1: Login Instructions -->
+            <section class="guide-section">
+                <div class="section-header">
+                    <span class="section-number">1</span>
+                    <h2 data-i18n="login-guide-title">Hướng dẫn đăng nhập</h2>
+                </div>
+                <div class="section-content">
+                    <p data-i18n="login-guide-text">Vui lòng truy cập đường link sau và đăng nhập bằng thông tin được cấp:</p>
+                    <div class="link-box">
+                        <a href="https://fourseasonsbutton.awsapps.com/mail" target="_blank" class="external-link">
+                            🔗 https://fourseasonsbutton.awsapps.com/mail
+                        </a>
+                    </div>
+                    <div class="info-box">
+                        <p><strong data-i18n="username-label">Username:</strong> <span data-i18n="username-text">chỉ nhập phần tên (không bao gồm "@fourseasonsbutton.com").</span></p>
+                        <p class="example"><span data-i18n="example">Ví dụ:</span> <code>systems</code></p>
+                        <p><strong data-i18n="password-label">Password:</strong> <span data-i18n="password-text">sử dụng mật khẩu đã được cung cấp riêng.</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Important Notes -->
+            <section class="guide-section">
+                <div class="section-header">
+                    <span class="section-number">2</span>
+                    <h2 data-i18n="important-notes-title">Lưu ý quan trọng khi sử dụng hệ thống mới</h2>
+                </div>
+                <div class="section-content">
+                    <ul class="warning-list">
+                        <li data-i18n="note1">Chỉ xem và kiểm tra email sau khi hoàn tất backup dữ liệu (bao gồm thao tác gửi thử nội bộ).</li>
+                        <li data-i18n="note2">Tuyệt đối không public hoặc chia sẻ bất kỳ địa chỉ IP nội bộ dưới mọi hình thức.</li>
+                        <li data-i18n="note3">Việc gửi email ra bên ngoài sẽ được phép sau khi có thông báo chính thức từ Bộ phận IT, khi hệ thống đã chuyển đổi hoàn tất và hoạt động ổn định.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 3: Login and Password Change -->
+            <section class="guide-section">
+                <div class="section-header">
+                    <span class="section-number">3</span>
+                    <h2 data-i18n="outlook-setup-title">Hướng dẫn Setup Outlook sau khi chuyển đổi</h2>
+                </div>
+                <div class="section-content">
+                    <p class="intro-text" data-i18n="outlook-intro">Sau khi Bộ phận IT thông báo tài khoản của bạn đã chuyển đổi sang hệ thống email mới, vui lòng phối hợp để hoàn tất việc cài đặt Outlook theo hướng dẫn sau:</p>
+                    
+                    <!-- Step 1: Login -->
+                    <div class="step-container">
+                        <div class="step-header">
+                            <span class="step-number"><span data-i18n="step">Bước</span> 1</span>
+                            <h3 data-i18n="step1-title">Đăng nhập</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-image-container">
+                                <img src="Step1.png" alt="Bước 1: Đăng nhập" class="step-image" id="step1-img">
+                            </div>
+                            <div class="step-description">
+                                <p data-i18n="step1-login-desc1">Truy cập vào đường link AWS WorkMail và đăng nhập bằng thông tin được cấp.</p>
+                                <p data-i18n="step1-login-desc2">Nhập Username (chỉ phần tên, không bao gồm @fourseasonsbutton.com) và Password.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Homepage -->
+                    <div class="step-container">
+                        <div class="step-header">
+                            <span class="step-number"><span data-i18n="step">Bước</span> 2</span>
+                            <h3 data-i18n="step2-title">Trang chủ</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-image-container">
+                                <img src="step2.png" alt="Bước 2: Trang chủ" class="step-image" id="step2-img">
+                            </div>
+                            <div class="step-description">
+                                <p data-i18n="step2-homepage-desc1">Sau khi đăng nhập thành công, bạn sẽ thấy trang chủ của AWS WorkMail.</p>
+                                <p data-i18n="step2-homepage-desc2">Tại đây bạn có thể xem email, soạn thư mới và quản lý các thư mục.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Settings -->
+                    <div class="step-container">
+                        <div class="step-header">
+                            <span class="step-number"><span data-i18n="step">Bước</span> 3</span>
+                            <h3 data-i18n="step3-title">Cài đặt</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-image-container">
+                                <img src="step3.png" alt="Bước 3: Cài đặt" class="step-image" id="step3-img">
+                            </div>
+                            <div class="step-description">
+                                <p data-i18n="step3-settings-desc1">Truy cập vào mục Cài đặt (Settings) để cấu hình tài khoản.</p>
+                                <p data-i18n="step3-settings-desc2">Tại đây bạn có thể thay đổi các thiết lập email, chữ ký, và các tùy chọn khác.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Change Password -->
+                    <div class="step-container">
+                        <div class="step-header">
+                            <span class="step-number"><span data-i18n="step">Bước</span> 4</span>
+                            <h3 data-i18n="step4-title">Đổi mật khẩu</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-image-container">
+                                <img src="step4.png" alt="Bước 4: Đổi mật khẩu" class="step-image" id="step4-img">
+                            </div>
+                            <div class="step-description">
+                                <p data-i18n="step4-password-desc1">Trong mục Cài đặt, chọn "Đổi mật khẩu" hoặc "Change Password".</p>
+                                <p data-i18n="step4-password-desc2">Nhập mật khẩu hiện tại và mật khẩu mới, sau đó xác nhận.</p>
+                                <p data-i18n="step4-password-desc3">Lưu ý: Mật khẩu mới phải đáp ứng các yêu cầu bảo mật của hệ thống.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Password Update Modal -->
+            <div id="password-modal" class="modal hidden">
+                <div class="modal-content">
+                    <span class="close-modal" onclick="closePasswordModal()">&times;</span>
+                    <h3 data-i18n="update-password-title">Cập nhật mật khẩu</h3>
+                    <div class="modal-body">
+                        <div class="input-group">
+                            <label for="modal-user-name" data-i18n="modal-name-label">Tên của bạn:</label>
+                            <input type="text" id="modal-user-name" data-i18n="modal-name-placeholder" placeholder="Nhập tên của bạn" autocomplete="off">
+                        </div>
+                        <div class="input-group">
+                            <label for="modal-office-select" data-i18n="modal-office-label">Văn phòng:</label>
+                            <select id="modal-office-select">
+                                <option value="" data-i18n="modal-select-office">-- Chọn văn phòng --</option>
+                                <option value="hcm">HCM OFFICE</option>
+                                <option value="hp">HP OFFICE</option>
+                                <option value="hn">HN OFFICE</option>
+                                <option value="factory">Factory BD</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="modal-password" data-i18n="modal-password-label">Mật khẩu mới:</label>
+                            <input type="password" id="modal-password" data-i18n="modal-password-placeholder" placeholder="Nhập mật khẩu mới">
+                        </div>
+                        <button class="btn-primary" onclick="savePassword()" data-i18n="save-password-btn">Lưu mật khẩu</button>
+                        <div id="modal-message" class="modal-message hidden"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4: Outlook Configuration -->
+            <section class="guide-section">
+                <div class="section-header">
+                    <span class="section-number">4</span>
+                    <h2 data-i18n="outlook-config-title">Cấu hình Outlook</h2>
+                </div>
+                <div class="section-content">
+                    <p class="intro-text" data-i18n="outlook-config-intro">Sau khi đã đăng nhập thành công vào AWS WorkMail, bạn cần cấu hình Outlook để có thể sử dụng email trên máy tính. Thực hiện theo các bước sau:</p>
+                    <p class="update-notice" data-i18n="outlook-config-update">📝 Đang cập nhật...</p>
+                </div>
+            </section>
+
+            <!-- Support Section -->
+            <section class="guide-section">
+                <div class="section-header">
+                    <span class="section-number">5</span>
+                    <h2 data-i18n="support-title">Hỗ trợ</h2>
+                </div>
+                <div class="section-content">
+                    <p data-i18n="support-text">Trong quá trình này, IT sẽ trực tiếp hỗ trợ nếu cần thiết để đảm bảo tất cả hoạt động ổn định.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="language.js"></script>
+    <script src="guide-script.js"></script>
+</body>
+</html>
+
